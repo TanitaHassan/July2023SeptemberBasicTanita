@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-10T13:12:55 EDT" name="Default suite" finished-at="2023-09-10T13:13:00 EDT" duration-ms="5565">
+  <suite started-at="2023-09-17T11:17:56 EDT" name="Default suite" finished-at="2023-09-17T11:17:57 EDT" duration-ms="132">
     <groups>
     </groups>
-    <test started-at="2023-09-10T13:12:55 EDT" name="Default test" finished-at="2023-09-10T13:13:00 EDT" duration-ms="5565">
-      <class name="com.facebook.locators.RegularXpath">
-        <test-method is-config="true" signature="openFacebook()[pri:0, instance:com.facebook.locators.RegularXpath@292b08d6]" started-at="2023-09-10T13:12:55 EDT" name="openFacebook" finished-at="2023-09-10T13:13:00 EDT" duration-ms="5316" status="PASS">
+    <test started-at="2023-09-17T11:17:56 EDT" name="Default test" finished-at="2023-09-17T11:17:57 EDT" duration-ms="132">
+      <class name="com.facebook.locators.ContainFunctionXpath">
+        <test-method signature="containFunction()[pri:0, instance:com.facebook.locators.ContainFunctionXpath@4d5d943d]" started-at="2023-09-17T11:17:57 EDT" name="containFunction" finished-at="2023-09-17T11:17:57 EDT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openFacebook -->
-        <test-method signature="loginTest()[pri:0, instance:com.facebook.locators.RegularXpath@292b08d6]" started-at="2023-09-10T13:13:00 EDT" name="loginTest" finished-at="2023-09-10T13:13:00 EDT" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.facebook.locators.RegularXpath -->
+        </test-method> <!-- containFunction -->
+      </class> <!-- com.facebook.locators.ContainFunctionXpath -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
