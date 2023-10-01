@@ -11,10 +11,11 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginTest {
+public class LoginTestName {
 	WebDriver driver;
-	String  userNameId="email";
-	String passWordId="pass";
+	String userName="email";
+	String passwordName="pass";
+	String loginButtonName="login";
 	@BeforeMethod
 	public void openApp() {
 		WebDriverManager.chromedriver().setup();
@@ -28,32 +29,32 @@ public class LoginTest {
 	
 	//@Test
 	public void validLoginTest() {
-		findById(userNameId).sendKeys("muhitt");
-		findById(passWordId).sendKeys("ppp");
-		//findById("pass").click();
+		findById(userName).sendKeys("muhitt");
+		findById(passwordName).sendKeys("ppp");
+		findById(loginButtonName).click();
 		
 	}
 	
 	//@Test
 	public void inValidLoginTest() {
-		findById(userNameId).sendKeys("muhitt");
-		findById(passWordId).sendKeys("ppp");
-		//findById("pass").click();
+		findById(userName).sendKeys("muhitt");
+		findById(passwordName).sendKeys("ppp");
+		findById(loginButtonName).click();
 	}
 //we were using driver for find elements so many times--	
 // we were using same locators so many times
 	
 	@Test
 	public void boundaryLoginTest() {
-		findById(userNameId).sendKeys("muhitt");
-		findById(passWordId).sendKeys("ppp");
-		//findById("pass").click();
+		findById(userName).sendKeys("muhitt");
+		findById(passwordName).sendKeys("ppp");
+		findById(loginButtonName).click();
 		
 	}
 	
 	
-	public WebElement findById(String id) {
-		return driver.findElement(By.id(id));			
+	public WebElement findById(String name) {
+		return driver.findElement(By.name(name));			
 	}
 
 }
