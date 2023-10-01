@@ -48,3 +48,8 @@ git push orgin master.
 Step 4 : Delete branchgit 
    git branch -d â€œbranch nameâ€�    â€” delete from local
    git push origin --delete â€œbranch nameâ€�   â€” delete from remote
+
+
+
+
+
